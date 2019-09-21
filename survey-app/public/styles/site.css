@@ -1067,7 +1067,7 @@ html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333;
@@ -1250,7 +1250,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -2698,7 +2698,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555;
+  color: #eee;
 }
 .form-control {
   display: block;
@@ -2707,7 +2707,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555;
+  color: #eee;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -4069,7 +4069,7 @@ tbody.collapse.in {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555;
+  color: #eee;
   text-align: center;
   background-color: #eee;
   border: 1px solid #ccc;
@@ -4578,22 +4578,22 @@ tbody.collapse.in {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #0070b9;
+  border-color: #005c98;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #e6e6e6;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4603,8 +4603,8 @@ tbody.collapse.in {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: #fff;
+  background-color: #005c98;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4624,17 +4624,17 @@ tbody.collapse.in {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #005c98;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
-  color: #555;
+  background-color: #005c98;
+  color: #fff;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: #fff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4644,8 +4644,8 @@ tbody.collapse.in {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555;
-    background-color: #e7e7e7;
+    color: #fff;
+    background-color: #005c98;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4655,13 +4655,13 @@ tbody.collapse.in {
   }
 }
 .navbar-default .navbar-link {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .navbar-link:hover {
   color: #333;
 }
 .navbar-default .btn-link {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
@@ -4674,8 +4674,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #090909;
+  background-color: #233251;
+  border-color: #141c2d;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4686,7 +4686,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
-  color: #9d9d9d;
+  color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #9d9d9d;
@@ -4700,7 +4700,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #090909;
+  background-color: #141c2d;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4720,20 +4720,20 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #101010;
+  border-color: #182338;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #090909;
+  background-color: #141c2d;
   color: #fff;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #090909;
+    border-color: #141c2d;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #090909;
+    background-color: #141c2d;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #9d9d9d;
@@ -4747,7 +4747,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #fff;
-    background-color: #090909;
+    background-color: #141c2d;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -5045,7 +5045,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #e6f3f8;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5057,7 +5057,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #d4d4d4;
+  border-top-color: #bee0ed;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -5981,7 +5981,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: #fff;
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -5993,7 +5993,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid transparent;
   min-height: 16.428571429px;
 }
 .modal-header .close {
@@ -6010,7 +6010,7 @@ button.close {
 .modal-footer {
   padding: 15px;
   text-align: right;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid transparent;
 }
 .modal-footer .btn + .btn {
   margin-left: 5px;
@@ -6050,7 +6050,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6065,7 +6065,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
   font-size: 12px;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -6169,7 +6169,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6184,7 +6184,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
   font-size: 14px;
   background-color: #fff;
   background-clip: padding-box;
@@ -6718,26 +6718,166 @@ button.close {
 #header {
   margin-top: 30px;
 }
-.container-fluid {
-  background-color: #e6f3f8;
+.navbar-right {
+  margin-right: 0px;
 }
-body {
-  background-color: #4071b8;
+.answers {
+  margin-left: 15px;
 }
-.jumbotron {
-  background-color: #e6f3f8;
+.scale {
+  display: inline-block;
 }
-a {
+.column-labels {
+  font-weight: bold;
+}
+.modal-content {
+  text-align: center;
+}
+.modal-content .btn {
+  margin-bottom: 10px;
+}
+.navbar-brand img {
+  height: 50px;
+}
+.navbar-brand {
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 5px;
+}
+.navbar img,
+.navbar-brand img {
+  max-height: 70px;
+  max-width: 70px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.navbar h2 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+#landing-top {
+  background-image: url("../images/paul-gilmore-184255-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#assessment-label {
+  margin-top: 10px;
+}
+#assessment-label h5 {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.navbar-inverse,
+.navbar-default {
+  margin-bottom: 0;
+}
+#landing .jumbotron {
+  background-color: #eee;
   color: #000;
+  width: 65%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 30px;
+}
+@media screen and (max-width: 600px) {
+  #landing .jumbotron {
+    width: 100%;
+  }
+}
+#landing-mid h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.help-block a {
+  color: #4071b8;
+  text-decoration: underline;
 }
 #footer {
-  margin-top: 30px;
   border-top: 1px solid gray-lighter;
   padding-top: 30px;
+  padding-bottom: 10px;
   color: gray-light;
+}
+#moduleLinks {
+  padding-top: 65px;
+  margin-left: -35px;
+}
+#moduleLinks .nav-link {
+  background-color: #fff;
 }
 .gallery-image img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.thumbnail {
+  color: #fff;
+  background-color: #fff;
+}
+.modalFormColumnRight {
+  padding-left: 7px;
+}
+.modalFormColumnLeft {
+  padding-right: 7px;
+}
+.modalFormRow {
+  margin-bottom: 0px;
+}
+.teamButtons {
+  margin-top: 20px;
+}
+.panel {
+  margin-top: 25px;
+}
+.glyphicon {
+  margin-right: 10px;
+}
+.leftLink {
+  margin-right: 15px;
+}
+.scaleLeft {
+  margin-right: 5px;
+}
+.scaleRight {
+  margin-left: 1em;
+}
+.leftButton {
+  margin-right: 15px;
+}
+#introTabsContent {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nav-link {
+  background-color: #eee;
+}
+.btn-primary {
+  background-color: #0070b9;
+}
+.btn-default {
+  background-color: #eee;
+}
+.form-control {
+  color: #000;
+}
+body {
+  padding-top: 50px;
+}
+#assessment-page h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.custom-select {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  font-size: 1.5em;
+}
+.custom-select select {
+  display: none;
 }

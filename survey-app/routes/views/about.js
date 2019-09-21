@@ -1,7 +1,9 @@
-var keystone = require('keystone');
-exports = module.exports = function (req, res) {
-var view = new keystone.View(req, res);
-    var locals = res.locals;
+const keystone = require('keystone');
+
+exports = module.exports = (req, res) => {
+    const view = new keystone.View(req, res);
+    const locals = res.locals;
     locals.section = 'about';
+
     view.render('about');
 };

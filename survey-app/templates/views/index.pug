@@ -1,8 +1,36 @@
 extends ../layouts/default
 
 block content
-	.container: .jumbotron
-		img(src='/images/BCATlogo.svg', width='160')
-		h1 Broadband Connectivity Assessment Tool
-		h2 Gathering community knowledge to support local broadband efforts.
-		h3 Click the Survey tab to get started.
+	div#landing
+		div#landing-top
+			.container: .jumbotron
+				h2 Broadband Connectivity Assessment Tool
+				h3 Gather Community Knowledge to Improve Broadband Access
+				hr
+				p A comprehensive planning tool that invites teams to engage local communities, assess their broadband landscape, and develop fact-based action plans. 
+
+		.container-fluid#landing-mid
+			.container
+				h3 Four Steps to a More Connected Community
+				ul.nav.nav-tabs(id="introTabs", role="tablist")
+					li.nav-item.active
+						a.nav-link(href="#team" data-toggle="tab") Establish a Team
+					li.nav-item
+						a.nav-link(href="#access" data-toggle="tab") Assess Access and Quality
+					li.nav-item
+						a.nav-link(href="#action" data-toggle="tab") Establish an Action Plan
+					li.nav-item
+						a.nav-link(href="#execute" data-toggle="tab") Execute
+				.tab-content(id="introTabsContent")
+					.tab-pane.active(id="team") 
+						p Change requires broad support for public action. Identify a broadband champion and build a coalition for change. Active community engagement builds trust with the public, and the ability to perform collective action. Team leaders should have a passion for improving their community and strong project management skills. Understanding of broadband and connectivity will develop over the course of the project.
+					.tab-pane(id="access")
+						p Examine data sources and answer questions to build a comprehensive profile of your community. Provide opinions and impact of the existing broadband access in order to identify the most critical areas. Assessments guide engagement to answer the most critical questions across people with many different priorities and experiences. Assessments for governmental roles gather information from various sources into the one spot to consider all opportunities. 
+					.tab-pane(id="action")
+						p Make a clear goal from your community priorities. Report out to oversight boards and the broader community. Reach out for funding, determine negotiations, or establish a plan for changing infrastructure and access. 
+					.tab-pane(id="execute") 
+						p Work with agencies and providers to implement your plan. Re-evaluate success and identify the next access challenge. 
+				hr
+
+				a.btn.btn-primary.leftButton(href='/home/') Participate in Your BCAT
+				a.btn.btn-default(href='mailto:bcatfeedback@gmail.com') Create a Team

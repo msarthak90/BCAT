@@ -18,29 +18,34 @@
  * http://expressjs.com/api.html#app.VERB
  */
 
-var keystone = require('keystone');
-var middleware = require('./middleware');
-var importRoutes = keystone.importer(__dirname);
+const keystone = require('keystone');
+const middleware = require('./middleware');
+const importRoutes = keystone.importer(__dirname);
 
 // Common Middleware
 keystone.pre('routes', middleware.initLocals);
 keystone.pre('render', middleware.flashMessages);
 
 // Import Route Controllers
-var routes = {
+const routes = {
 	views: importRoutes('./views'),
+	api: importRoutes('./api'),
 };
 
 // Setup Route Bindings
-exports = module.exports = function (app) {
+exports = module.exports = (app) => {
+	// API's
+	app.post('/api/respond', middleware.requireUser, routes.api.respond.question);
+	app.get('/api/export/csv', middleware.requireUser, routes.api.export.csv);
+	
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/survey', routes.views.survey);
+	app.all(['/assessment', '/assessment/:moduleId'], middleware.requireUser, routes.views.assessment);
 	app.get('/about', routes.views.about);
-	app.get('/team', routes.views.team);
 	app.get('/resources', routes.views.resources);
+	app.all('/team', middleware.requireUser, routes.views.team);
+	app.get('/home', middleware.requireUser, routes.views.home);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
-
 };

@@ -3,7 +3,7 @@
 require('dotenv').config();
 
 // Require keystone
-var keystone = require('keystone');
+const keystone = require('keystone');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -41,14 +41,16 @@ keystone.set('locals', {
 // Load your project's Routes
 keystone.set('routes', require('./routes'));
 
+// Set login image
+keystone.set('signin logo', '../images/BCATlogo.svg');
+keystone.set('signin redirect', '/home');
+keystone.set('signout redirect', '/');
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	users: 'users',
+	users: ['users', 'teams', 'roles'],
+	modules: ['modules', 'questions']
 });
 
 // Start Keystone to connect to your database and initialise the web server
-
-
-
 keystone.start();
